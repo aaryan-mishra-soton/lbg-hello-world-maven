@@ -34,7 +34,7 @@ public class App
         if (number % 2 == 0) {
             return true;
         } else {
-            return true;
+            return false;
         }
     }
 }

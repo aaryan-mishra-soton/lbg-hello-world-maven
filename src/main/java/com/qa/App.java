@@ -29,4 +29,12 @@ public class App
     public static String sayHelloToSomeone(String name){
         return "Hello " + name ;
     }
+
+    public static Boolean isEven(int number) {
+        if (number % 2 == 0) {
+            return true;
+        } else {
+            return true;
+        }
+    }
 }

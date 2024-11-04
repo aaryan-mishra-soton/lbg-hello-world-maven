@@ -2,6 +2,7 @@ package com.qa;
 
 import org.junit.jupiter.api.Test;
 import static com.qa.App.sayHello;
+import static com.qa.App.isEven;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
@@ -42,5 +43,13 @@ public class AppTest
         actualResponse = sayHello();
         // Assert
         assertEquals( expectedResponse, actualResponse);
+    }
+
+    @Test
+    public void test_isEven_should_return_false() {
+        Boolean actualResponse = isEven(3);
+        Boolean expectedResponse = false;
+
+        assertEquals(expectedResponse, actualResponse);
     }
 }
